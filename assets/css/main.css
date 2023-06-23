@@ -1,3 +1,10 @@
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #6c757d;
+    --accent-color: #ffd333;
+    --contrast-color: #3d464d;
+}
+
 html, body {
     height: 100%;
 }
@@ -5,7 +12,29 @@ html, body {
 body {
     min-width: 320px;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn, .dropdown-menu {
+    border-radius: 0;
+}
+
+/* ------------------- General rules ----------------------- */
 
 .wrapper {
     min-height: 100%;
@@ -16,3 +45,49 @@ body {
 main.main {
     flex: 1 1 auto;
 }
+
+/* ------------------- Header rules ----------------------- */
+
+.header-top-phone a {
+    text-decoration: none;
+}
+
+.header-top-phone a:hover {
+    text-decoration: underline;
+}
+
+ul.social-icons {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+ul.social-icons li {
+    margin-right: 10px;
+}
+
+ul.social-icons a {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+ul.social-icons a:hover {
+    background-color: var(--contrast-color);
+    color: var(--accent-color);
+    transition: all .3s;
+}
+
+.header-top .btn {
+    background-color: #fff;
+}
+
+/* ------------------- General rules ----------------------- */
+/* ------------------- General rules ----------------------- */
+/* ------------------- General rules ----------------------- */
