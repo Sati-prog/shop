@@ -3,6 +3,7 @@
     --text-color: #6c757d;
     --accent-color: #ffd333;
     --contrast-color: #3d464d;
+    --grey-color: #ccc;
 }
 
 html, body {
@@ -30,8 +31,38 @@ img {
     height: auto;
 }
 
-.btn, .dropdown-menu {
+.btn, 
+.dropdown-menu,
+.form-control {
     border-radius: 0;
+}
+
+.form-control:focus {
+    color: var(--text-color);
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: var(--grey-color);
+}
+
+.btn-warning {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.btn-outline-warning {
+    border-color: var(--accent-color);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.bg-warning {
+    background-color: var(--accent-color) !important;
 }
 
 /* ------------------- General rules ----------------------- */
@@ -86,6 +117,26 @@ ul.social-icons a:hover {
 
 .header-top .btn {
     background-color: #fff;
+}
+
+.header-logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    transition: all .3s;
+}
+
+.header-logo:hover {
+    color: var(--contrast-color);
+}
+
+.cart-buttons .btn {
+    color: var(--contrast-color);
+    transition: all .3s;
+}
+
+.cart-buttons .btn:hover {
+    border: 1px solid var(--grey-color);
 }
 
 /* ------------------- General rules ----------------------- */
