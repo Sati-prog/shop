@@ -4,6 +4,8 @@
     --accent-color: #ffd333;
     --contrast-color: #3d464d;
     --grey-color: #ccc;
+    --red-color: #ee6e73;
+    --light-grey-color: #eee;
 }
 
 html, body {
@@ -105,7 +107,7 @@ section {
 
 /* ------------------- General rules ----------------------- */
 
-/* ------------------- Header rules ----------------------- */
+/* ------------------- Header ----------------------- */
 
 .header-top-phone a {
     text-decoration: none;
@@ -202,25 +204,26 @@ ul.social-icons a:hover {
     margin-top: 7px;
 }
 
-/* ------------------- Header rules ----------------------- */
+.headernav-scroll.header-bottom .navbar .offcanvas:not(.show) .nav-link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
 
-/* ------------------- Main rules ----------------------- */
+/* ------------------- Header ----------------------- */
 
-/* ------------------- Carusel rules ----------------------- */
+/* ------------------- Main ----------------------- */
+
+/* ------------------- Carusel ----------------------- */
 
 .carousel-caption p {
     font-size: 1.5rem;
 }
 
-/* ------------------- Carusel rules ----------------------- */
+/* ------------------- Carusel ----------------------- */
 
-/* ------------------- Advantages rules ----------------------- */
+/* ------------------- Advantages ----------------------- */
 
-.advantages .items {
-    margin-top: 50px;
-}
-
-.advantages .items .item {
+.advantages .item {
     background-color: #fff;
     text-align: center;
     padding: 1rem;
@@ -230,7 +233,7 @@ ul.social-icons a:hover {
     transition: all .3s;
 }
 
-.advantages .items .item:hover {
+.advantages .item:hover {
     box-shadow: 0 15px 30px -15px rgba(0, 0, 0, .5)
 }
 
@@ -239,9 +242,115 @@ ul.social-icons a:hover {
     color: var(--accent-color);
 }
 
-/* ------------------- Advantages rules ----------------------- */
+/* ------------------- Advantages ----------------------- */
 
-/* ------------------- Main rules ----------------------- */
+/* ------------------- Featured products ----------------------- */
+
+/* ------------------- Product card ----------------------- */
+
+.product-card {
+    transition: all .3s;
+    border: 1px solid var(--grey-color);
+    background-color: #fff;
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px -15px rgba(0, 0, 0, .75); 
+}
+
+.product-card-offer {
+    color:#fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-transform: uppercase;
+}
+
+.product-card-offer>div {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.offer-hit {
+    background-color: var(--red-color);
+}
+
+.offer-new {
+    background-color: var(--accent-color);
+}
+
+.product-thumb {
+    text-align: center;
+}
+
+.product-thumb img {
+    max-height: 250px;
+}
+
+.product-details {
+    padding: 10px 20px;
+}
+
+.product-details h4 {
+    font-size: 1.2rem;
+}
+
+.product-details h4 a {
+    height: 45px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all .3s;
+
+    /* обрезаем длинный текст при помощи троеточия */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-details h4 a:hover {
+    color: var(--accent-color);
+}
+
+.product-excerpt {
+    height: 45px;
+    overflow: hidden;
+
+    /* обрезаем длинный текст при помощи троеточия */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-bottom-details {
+    border-top: 1px solid var(--light-grey-color);
+    padding-top: 1rem;
+}
+
+.product-price {
+    font-size: 18px;
+    color: var(--red-color);
+    font-weight: 600;
+}
+
+.product-price small {
+    color: var(--grey-color);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+/* ------------------- Product card ----------------------- */
+
+/* ------------------- Featured products ----------------------- */
+
+/* ------------------- Main ----------------------- */
 
 /* ------------------- General rules ----------------------- */
 
@@ -249,7 +358,7 @@ ul.social-icons a:hover {
 
 /* ------------------- General rules ----------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .header-bottom .navbar .dropdown-menu-end {
         margin-left: 0;
         border: 0; 
@@ -260,7 +369,7 @@ ul.social-icons a:hover {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991.98px) {
     .header-bottom .navbar .dropdown-menu {
         padding-left: 1rem;
     }

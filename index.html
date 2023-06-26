@@ -143,7 +143,7 @@
             </div>
         </header>
 
-        <div class="header-bottom sticky-top">
+        <div class="header-bottom sticky-top" id="header-nav">
             <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
                     <button 
@@ -281,9 +281,9 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/slider/1.jpg" class="d-block w-100" alt="sconce">
+                        <img src="assets/img/slider/1.jpg" class="d-block w-100" alt="sconces">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Sconce</h2>
+                            <h2>Sconces</h2>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
@@ -336,7 +336,7 @@
 
             <section class="advantages">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-12">
                             <h2 class="section-title">
                                 <span>Our advantages</span>
@@ -344,45 +344,307 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="row gy-3">
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="item">
-                                    <p>
-                                        <i class="fas fa-shipping-fast"></i>
-                                    </p>
-                                    <p>Direct deliveries from brand manufacturers</p>
-                                    <!-- <p>Прямые поставки от производителей брендов</p> -->
+
+                    <div class="row gy-3 items">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <p>
+                                    <i class="fas fa-shipping-fast"></i>
+                                </p>
+                                <p>Direct deliveries from brand manufacturers</p>
+                                <!-- <p>Прямые поставки от производителей брендов</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <p>
+                                    <i class="fas fa-cubes"></i>
+                                </p>
+                                <p>Wide range of goods. More than 10 thousand items</p>
+                                <!-- <p>Широкий ассортимент товаров. Более 10 тыс. наименований</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <p>
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </p>
+                                <p>Pleasant and competitive prices</p>
+                                <!-- <p>Приятные и конкурентные цены</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <p>
+                                    <i class="fas fa-user-graduate"></i>
+                                </p>
+                                <p>Consultations from professionals</p>
+                                <!-- <p>Консультации от профессионалов</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-products">
+                <div class="container-fluid">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h2 class="section-title">
+                                <span>Featured products</span>
+                                <!-- <span>рекомендуемые товары</span> -->
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/sconce.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>27000 tg</small>
+                                            25000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="item">
-                                    <p>
-                                        <i class="fas fa-cubes"></i>
-                                    </p>
-                                    <p>Wide range of goods. More than 10 thousand items</p>
-                                    <!-- <p>Широкий ассортимент товаров. Более 10 тыс. наименований</p> -->
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/switches.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>4000 tg</small>
+                                            3000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="item">
-                                    <p>
-                                        <i class="fas fa-hand-holding-usd"></i>
-                                    </p>
-                                    <p>Pleasant and competitive prices</p>
-                                    <!-- <p>Приятные и конкурентные цены</p> -->
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/sockets.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>5000 tg</small>
+                                            3000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="item">
-                                    <p>
-                                        <i class="fas fa-user-graduate"></i>
-                                    </p>
-                                    <p>Consultations from professionals</p>
-                                    <!-- <p>Консультации от профессионалов</p> -->
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/spots.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>7000 tg</small>
+                                            5000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/magnetic-tracks.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>10000 tg</small>
+                                            5000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/sockets.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>10000 tg</small>
+                                            5000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/spots.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>10000 tg</small>
+                                            5000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 sm-6 mb-3">
+                            <div class="product-card">
+                                <div class="product-card-offer">
+                                    <div class="offer-hit">Hit</div>
+                                    <div class="offer-new">New</div>
+                                </div>
+                                <div class="product-thumb">
+                                    <a href="product.html">
+                                        <img src="assets/img/products/sconce.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <h4>
+                                        <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                    </h4>
+                                    <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                    <div class="product-bottom-details d-flex justify-content-between">
+                                        <div class="product-price">
+                                            <small>10000 tg</small>
+                                            5000 tg
+                                        </div>
+                                        <div class="product-links">
+                                            <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -390,7 +652,7 @@
                 </div>
             </section>
         </main>
-        
+
         <!-- <footer class="footer">Footer</footer> -->
     </div>
 
