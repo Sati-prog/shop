@@ -8,6 +8,15 @@ window.addEventListener('scroll', function () {
 const offcanvasCartEl = document.getElementById('offcanvasCart'),
       offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
 
+document.querySelectorAll('.cart-open').forEach(item => {
+    
+    item.addEventListener('click', (e) => {
+
+        e.preventDefault();
+        offcanvasCart.toggle();
+    });
+});
+
 document.querySelectorAll('.closecart').forEach(item => {
 
     item.addEventListener('click', (e) => {
@@ -15,15 +24,9 @@ document.querySelectorAll('.closecart').forEach(item => {
         e.preventDefault();
         offcanvasCart.hide();
 
-        // let href = item.href.split('#').pop();
         let href = item.dataset.href;
-
-        offcanvasCartEl.addEventListener('hidden.bs.offcanvas', () => {
-            
-            document.getElementById(href).scrollIntoView();
-        });
-
-    })
+        document.getElementById(href).scrollIntoView();
+    });
 });
 
 $(document).ready(function() {

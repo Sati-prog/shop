@@ -96,9 +96,9 @@
                             </a>
 
                             <button 
-                                class="btn p-1" 
-                                type="button" 
-                                data-bs-toggle="offcanvas" 
+                                class="btn p-1 cart-open" 
+                                type="button"
+                                data-bs-toggle="offcanvas2"
                                 data-bs-target="#offcanvasCart" 
                                 aria-controls="offcanvasCart">
                                     <i class="fa-solid fa-cart-shopping"></i>
@@ -127,47 +127,6 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. 
-                        Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a 
-                                class="dropdown-item closecart" 
-                                href="#footer" 
-                                data-href="footer">Footer
-                            </a>
-                        </li>
-                        <li>
-                            <a 
-                                class="dropdown-item closecart" 
-                                href="#about" 
-                                data-href="about">About
-                            </a>
-                        </li>
-                        <li>
-                            <a 
-                                class="dropdown-item closecart" 
-                                href="#map" 
-                                data-href="map">Map
-                            </a>
-                        </li>
-                    </ul>
-                  </div>
                 </div>
             </div>
         </header>
@@ -263,10 +222,9 @@
                         </a>
 
                         <button 
-                            class="btn p-1" 
-                            id="cart-open"
-                            type="button" 
-                            data-bs-toggle="offcanvas" 
+                            class="btn p-1 cart-open"
+                            type="button"
+                            data-bs-toggle="offcanvas2"
                             data-bs-target="#offcanvasCart" 
                             aria-controls="offcanvasCart">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -275,6 +233,120 @@
                     </div>
                 </div>
             </nav>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="table-responsive">
+                    <table class="table offcanvasCart-table">
+                        <tbody>
+                            <tr>
+                                <td class="product-img-td">
+                                    <a href="#">
+                                        <img src="assets/img/products/sconce.jpeg" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                    </a>
+                                </td>
+                                <td>5000 tg</td>
+                                <td>&times;1</td>
+                                <td>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="product-img-td">
+                                    <a href="#">
+                                        <img src="assets/img/products/sockets.jpeg" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                    </a>
+                                </td>
+                                <td>3000 tg</td>
+                                <td>&times;10</td>
+                                <td>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="product-img-td">
+                                    <a href="#">
+                                        <img src="assets/img/products/spots.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                    </a>
+                                </td>
+                                <td>10000 tg</td>
+                                <td>&times;5</td>
+                                <td>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-center"><b>Total:</b></td>
+                                <td colspan="3" class="text-center">18000 tg</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="text-end mt-3">
+                    <a href="#" class="btn btn-outline-warning">Cart</a>
+                    <a href="#" class="btn btn-outline-secondary">Checkout</a>
+                </div>
+
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a 
+                            class="dropdown-item closecart" 
+                            href="#footer" 
+                            data-href="footer">Footer
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            class="dropdown-item closecart" 
+                            href="#about" 
+                            data-href="about">About
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            class="dropdown-item closecart" 
+                            href="#map" 
+                            data-href="map">Map
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
         </div>
 
         <main class="main">
