@@ -486,7 +486,371 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="product-content-details bg-white p-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button 
+                                        class="nav-link active" 
+                                        id="description-tab" 
+                                        data-bs-toggle="tab" 
+                                        data-bs-target="#description-tab-pane" 
+                                        type="button" 
+                                        role="tab" 
+                                        aria-controls="description-tab-pane" 
+                                        aria-selected="true">
+                                            Description
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button 
+                                        class="nav-link" 
+                                        id="features-tab" 
+                                        data-bs-toggle="tab" 
+                                        data-bs-target="#features-tab-pane" 
+                                        type="button" 
+                                        role="tab" 
+                                        aria-controls="features-tab-pane" 
+                                        aria-selected="false">
+                                            Features
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button 
+                                        class="nav-link" 
+                                        id="video-tab" 
+                                        data-bs-toggle="tab" 
+                                        data-bs-target="#video-tab-pane" 
+                                        type="button" 
+                                        role="tab" 
+                                        aria-controls="video-tab-pane" 
+                                        aria-selected="false">
+                                            Video
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div 
+                                    class="tab-pane fade show active" 
+                                    id="description-tab-pane" 
+                                    role="tabpanel" 
+                                    aria-labelledby="description-tab" 
+                                    tabindex="0">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas sapiente enim! 
+                                            Alias, corporis fuga. Dolore, iste aperiam ex, assumenda, quisquam blanditiis voluptatum veniam 
+                                            recusandae in illum maxime alias aliquam?
+                                        </p>
+                                        <p>
+                                            Cum, facere quas alias voluptates, velit maiores ullam, nulla eveniet repellendus dolores fuga 
+                                            dolore ipsam minus tenetur nihil rerum vitae unde quo ad laboriosam laborum! Facilis ipsam nisi 
+                                            optio ex.
+                                        </p>
+                                        <p>
+                                            Repudiandae id ab fuga minus labore amet, culpa fugiat ducimus. Rem omnis perferendis sunt 
+                                            adipisci recusandae fugiat praesentium magnam officia fuga voluptatem expedita, unde possimus 
+                                            molestias, accusantium vero quo aspernatur.
+                                        </p>
+                                </div>
+                                
+                                <div 
+                                    class="tab-pane fade" 
+                                    id="features-tab-pane" 
+                                    ole="tabpanel" 
+                                    aria-labelledby="features-tab" 
+                                    tabindex="0">
+                                    <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">Colors</th>
+                                            <td>White, black, silver</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Sizes</th>
+                                            <td>10x10 cm, 15x15 cm</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                
+                                <div 
+                                    class="tab-pane fade" 
+                                    id="video-tab-pane" 
+                                    role="tabpanel" 
+                                    aria-labelledby="video-tab" 
+                                    tabindex="0">
+                                    <div class="ratio ratio-16x9">
+                                        <!-- <video 
+                                            src="assets/video/магазин люстр и светильников ART LIGHT реклама (Актау, Казахстан).mp4"
+                                            controls>
+                                        </video> -->
+
+                                        <iframe 
+                                            width="560" 
+                                            height="315" 
+                                            src="https://www.youtube.com/embed/f89GMUP0Up0" 
+                                            title="YouTube video player" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; 
+                                            encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <section class="new-products">
+                <div class="container-fluid">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h2 class="section-title">
+                                <span>Novelties</span>
+                                <!-- <span>новинки</span> -->
+                            </h2>
+                        </div>
+                    </div>
+    
+                    <div class="owl-carousel owl-carousel-full owl-theme">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/sconce.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>27000 tg</small>
+                                        25000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/switches.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>4000 tg</small>
+                                        3000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/sockets.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>5000 tg</small>
+                                        3000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/spots.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>7000 tg</small>
+                                        5000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/magnetic-tracks.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>10000 tg</small>
+                                        5000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/sockets.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>10000 tg</small>
+                                        5000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/spots.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>10000 tg</small>
+                                        5000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">Hit</div>
+                                <div class="offer-new">New</div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html">
+                                    <img src="assets/img/products/sconce.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellat!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>10000 tg</small>
+                                        5000 tg
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer" id="footer">

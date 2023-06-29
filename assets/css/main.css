@@ -554,6 +554,15 @@ footer a:hover {
     margin-right: 10px;
 }
 
+.nav-tabs .nav-link {
+    border-radius: 0;
+    color: var(--contrast-color);
+}
+
+.tab-content {
+    padding: 20px;
+}
+
 /* ------------------- Product Page ----------------------- */
 
 /* ------------------- Media ----------------------- */
@@ -597,5 +606,11 @@ footer a:hover {
 
     .breadcrumbs {
         font-size: .6rem;
+    }
+
+    .product-content-details .nav-tabs .nav-link {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: .8rem;
     }
 }
