@@ -506,6 +506,25 @@ footer a:hover {
     color: var(--text-color);
 }
 
+.page-link {
+    color: var(--contrast-color);
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.active> .page-link, .page-link.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.sidebar .collapse-filters-btn {
+    color: var(--contrast-color);
+}
+
 /* ------------------- Category Page ----------------------- */
 
 /* ------------------- Media ----------------------- */
@@ -524,5 +543,30 @@ footer a:hover {
 @media only screen and (max-width: 991.98px) {
     .header-bottom .navbar .dropdown-menu {
         padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar .collapse-filters {
+        display: block;
+    }
+
+    .sidebar .collapse-filters-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header-top-phone a {
+        margin-left: 0.3rem!important;
+        font-size: .9rem;
+    }
+
+    .header-top-phone i {
+        font-size: 0.9rem;
+    }
+
+    .breadcrumbs {
+        font-size: .6rem;
     }
 }
