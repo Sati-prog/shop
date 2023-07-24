@@ -29,6 +29,10 @@ a:hover {
     text-decoration: none;
 }
 
+textarea {
+    resize: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -36,11 +40,13 @@ img {
 
 .btn, 
 .dropdown-menu,
-.form-control {
+.form-control,
+.form-select {
     border-radius: 0;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-select:focus {
     color: var(--text-color);
     border-color: var(--accent-color);
     box-shadow: none;
@@ -389,7 +395,8 @@ ul.social-icons a:hover {
 .about-us .section-title span,
 .sidebar .section-title span,
 .product-content .section-title span,
-.page-register .section-title span {
+.page-register .section-title span,
+.checkout-content .section-title span {
     background-color: #fff;
 }
 
@@ -613,7 +620,8 @@ footer a:hover {
     color: var(--contrast-color);
 }
 
-.cart-summary .btn-checkout {
+.cart-summary .btn-checkout,
+.checkout-summary .btn-checkout {
     padding: 1rem;
 }
 

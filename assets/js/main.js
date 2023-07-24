@@ -18,7 +18,8 @@
 
         }, false);
     });
-  })();
+
+})();
 
 window.addEventListener('scroll', function () {
 

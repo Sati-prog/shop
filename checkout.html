@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legrand | Registration</title>
+    <title>Legrand | Checkout</title>
     <!-- Google Font: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -380,7 +380,7 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <span>Registration</span>
+                                    <span>Checkout</span>
                                 </li>
                             </ul>
                         </nav>
@@ -388,50 +388,177 @@
                 </div>
             </div>
 
-            <div class="container-fluid mb-3">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="page-register bg-white p-3">
-                            <h1 class="section-title h3">
-                                <span>Registration</span>
-                            </h1>
+            <div class="container-fluid">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-lg-8 mb-3">
+                            <div class="checkout-content p-3 h-100 bg-white">
+                                <h1 class="section-title h5">
+                                    <span>Billing address</span>
+                                </h1>
 
-                            <div class="row">
-                                <div class="col-md-6 offset-md-3">
-                                    <form action="" class="needs-validation" novalidate>
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label required">Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                                            <div class="invalid-feedback">Name is required</div>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input 
+                                            type="text" 
+                                            name="name" 
+                                            class="form-control" 
+                                            id="name" 
+                                            placeholder="John Doe" 
+                                            required>
+                                    </div>
 
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label required">Email address</label>
-                                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                            <div class="invalid-feedback">Please, provide a valid Email</div>
-                                        </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input 
+                                            type="email" 
+                                            name="email" 
+                                            class="form-control" 
+                                            id="email" 
+                                            placeholder="example@gmail.com" 
+                                            required>
+                                    </div>
 
-                                        <div class="mb-3">
-                                            <label for="phone" class="form-label required">Phone number</label>
-                                            <input type="tel" class="form-control" id="phone" placeholder="+ 7 777 123 4567" required>
-                                            <div class="invalid-feedback">Phone number is required</div>
-                                        </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input 
+                                            type="tel" 
+                                            name="phone" 
+                                            class="form-control" 
+                                            id="phone" 
+                                            placeholder="+ 7 777 123 45 67" 
+                                            required>
+                                    </div>
 
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label required">Password</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Your password" required>
-                                            <div class="invalid-feedback">Password is required</div>
-                                        </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="country" class="form-label">Country</label>
+                                        <select class="form-select" name="country" id="country" required>
+                                            
+                                        </select>
+                                    </div>
 
-                                        <div class="mb-3">
-                                            <button type="submit" class="btn btn-warning">Registration</button>
-                                        </div>
-                                    </form>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="city" class="form-label">City</label>
+                                        <input 
+                                            type="text" 
+                                            name="city" 
+                                            class="form-control" 
+                                            id="city" 
+                                            placeholder="Astana" 
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input 
+                                            type="text" 
+                                            name="address" 
+                                            class="form-control" 
+                                            id="address" 
+                                            placeholder="Street, house number, flat number"
+                                            required>
+                                    </div>
+
+                                    <div class="col mb-3">
+                                        <label for="comment" class="form-label">Comment</label>
+                                        <textarea 
+                                            name="comment" 
+                                            class="form-control" 
+                                            id="comment" 
+                                            rows="3" 
+                                            placeholder="Order note..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 mb-3">
+                            <div class="checkout-summary p-3 h-100 sidebar">
+                                <h5 class="section-title">
+                                    <span>Order total</span>
+                                </h5>
+    
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th class="text-end">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                    <small>(5000 tg x 1)</small>
+                                                </td>
+                                                <td class="text-end">
+                                                    5000 tg
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                    <small>(3000 tg x 10)</small>
+                                                </td>
+                                                <td class="text-end">
+                                                    30000 tg
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                    <small>(10000 tg x 5)</small>
+                                                </td>
+                                                <td class="text-end">
+                                                    50000 tg
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2" class="text-end">85000 tg</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        value="payment-method-1"
+                                        name="payment-method" 
+                                        class="form-check-input" 
+                                        type="radio" 
+                                        name="payment-method-1" 
+                                        id="payment-method-1" 
+                                        required
+                                        checked>
+                                    <label class="form-check-label" for="payment-method-1">
+                                        Card payment
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input 
+                                        value="payment-method-1"
+                                        name="payment-method" 
+                                        class="form-check-input" 
+                                        type="radio" 
+                                        name="payment-method-2" 
+                                        id="payment-method-2"
+                                        required>
+                                    <label class="form-check-label" for="payment-method-2">
+                                        Payment on delivery
+                                    </label>
+                                </div>
+    
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-warning btn-checkout">Checkout</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
 
@@ -534,5 +661,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/owlcarusel/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        fetch('/assets/js/countries.json')
+            .then((res) => res.json())
+            .then((json) => {
+
+                let html = '';
+                json['countries'].forEach((el) => {
+
+                    html += `<option value="${el.code}">${el.name}</option>`;
+                });
+
+                document.getElementById('country').innerHTML = html;
+            });
+    </script>
 </body>
 </html>
