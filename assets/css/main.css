@@ -2,6 +2,7 @@
     --bg-color: #f5f5f5;
     --text-color: #6c757d;
     --accent-color: #ffd333;
+    /* --accent-color: #8fce00; */
     --contrast-color: #3d464d;
     --grey-color: #ccc;
     --red-color: #ee6e73;
@@ -575,6 +576,48 @@ footer a:hover {
 }
 
 /* ------------------- Product Page ----------------------- */
+
+/* ------------------- Cart Page ----------------------- */
+
+.cart-content table img {
+    max-width: 50px;
+}
+
+.cart-content table th {
+    text-align: center;
+}
+
+.cart-content table td {
+    padding: 1rem;
+}
+
+.cart-content-title {
+    text-decoration: none;
+    display: block;
+}
+
+.cart-qty {
+    width: 70px;
+}
+
+.btn-coupon {
+    color: var(--text-color);
+    text-decoration: none;  
+}
+
+.btn-coupon:hover {
+    color: var(--contrast-color);
+}
+
+.cart-summary h4 {
+    color: var(--contrast-color);
+}
+
+.cart-summary .btn-checkout {
+    padding: 1rem;
+}
+
+/* ------------------- Cart Page ----------------------- */
 
 /* ------------------- Media ----------------------- */
 

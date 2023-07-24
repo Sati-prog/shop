@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legrand | Registration</title>
+    <title>Legrand | Cart</title>
     <!-- Google Font: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -380,7 +380,7 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <span>Registration</span>
+                                    <span>Cart</span>
                                 </li>
                             </ul>
                         </nav>
@@ -388,46 +388,149 @@
                 </div>
             </div>
 
-            <div class="container-fluid mb-3">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="page-register bg-white p-3">
-                            <h1 class="section-title h3">
-                                <span>Registration</span>
-                            </h1>
+                    <div class="col-lg-8 mb-3">
+                        <div class="cart-content p-3 h-100 bg-white">
+                            <div class="table-responsive">
+                                <table class="table align-middle table-hover">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Photo</th>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Qty</th>
+                                            <th>
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-img-td">
+                                                <a href="#">
+                                                    <img src="assets/img/products/sconce.jpeg" alt="">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="cart-content-title">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                </a>
+                                            </td>
+                                            <td>5000 tg</td>
+                                            <td>
+                                                <input type="number" value="1" class="form-control cart-qty">
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td class="product-img-td">
+                                                <a href="#">
+                                                    <img src="assets/img/products/sockets.jpeg" alt="">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="cart-content-title">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                </a>
+                                            </td>
+                                            <td>3000 tg</td>
+                                            <td>
+                                                <input type="number" value="10" class="form-control cart-qty">
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td class="product-img-td">
+                                                <a href="#">
+                                                    <img src="assets/img/products/spots.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="cart-content-title">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At.
+                                                </a>
+                                            </td>
+                                            <td>10000 tg</td>
+                                            <td>
+                                                <input type="number" value="5" class="form-control cart-qty">
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="5" class="text-end">
+                                                <button class="btn btn-outline-warning">Update Cart</button>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="row">
-                                <div class="col-md-6 offset-md-3">
-                                    <form action="" class="needs-validation" novalidate>
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label required">Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                                            <div class="invalid-feedback">Name is required</div>
-                                        </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="cart-summary p-3 sidebar">
+                            <h5 class="section-title">
+                                <span>Cart summary</span>
+                            </h5>
 
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label required">Email address</label>
-                                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                            <div class="invalid-feedback">Please, provide a valid Email</div>
-                                        </div>
+                            <div class="d-flex justify-content-between my-3">
+                                <h6>Subtotal</h6>
+                                <h6>20000 tg</h6>
+                            </div>
 
-                                        <div class="mb-3">
-                                            <label for="phone" class="form-label required">Phone number</label>
-                                            <input type="tel" class="form-control" id="phone" placeholder="+ 7 777 123 4567" required>
-                                            <div class="invalid-feedback">Phone number is required</div>
-                                        </div>
+                            <div class="d-flex justify-content-between my-3">
+                                <h6>Coupon</h6>
+                                <h6>-  5000 tg</h6>
+                            </div>
 
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label required">Password</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Your password" required>
-                                            <div class="invalid-feedback">Password is required</div>
-                                        </div>
+                            <div class="d-flex justify-content-between my-3 border-bottom">
+                                <h6>Shipping</h6>
+                                <h6>2000 tg</h6>
+                            </div>
 
-                                        <div class="mb-3">
-                                            <button type="submit" class="btn btn-warning">Registration</button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <button 
+                                class="btn btn-link px-0 btn-coupon" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseCoupon">
+                                    Are you have a Coupon?
+                            </button>
+
+                            <div class="input-group collapse" id="collapseCoupon">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Coupon Code">
+
+                                <button 
+                                    class="btn btn-warning">
+                                        <i class="fa-regular fa-circle-check"></i>
+                                </button>
+                            </div>
+
+                            <div class="d-flex justify-content-between my-3">
+                                <h4>Total</h4>
+                                <h4>17000 tg</h4>
+                            </div>
+
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-warning btn-checkout">Checkout</a>
                             </div>
                         </div>
                     </div>
