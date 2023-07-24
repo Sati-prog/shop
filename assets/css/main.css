@@ -619,6 +619,15 @@ footer a:hover {
 
 /* ------------------- Cart Page ----------------------- */
 
+/* ------------------- Payment Page ----------------------- */
+
+.cards img {
+    height: 30px;
+    margin-right: 15px;
+}
+
+/* ------------------- Payment Page ----------------------- */
+
 /* ------------------- Media ----------------------- */
 
 @media only screen and (min-width: 992px) {
