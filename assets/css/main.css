@@ -636,6 +636,20 @@ footer a:hover {
 
 /* ------------------- Payment Page ----------------------- */
 
+/* ------------------- Contact Page ----------------------- */
+
+.phone-numbers a {
+    text-decoration: none;    
+    transition: all .3s;
+}
+
+.phone-numbers a:hover {
+    color: var(--accent-color);
+    
+}
+
+/* ------------------- Contact Page ----------------------- */
+
 /* ------------------- Media ----------------------- */
 
 @media only screen and (min-width: 992px) {
